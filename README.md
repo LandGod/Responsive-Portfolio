@@ -1,0 +1,2 @@
+# Responsive-Portfolio
+This website is an updated version of the "Basic Portfolio" website that I created earlier. That website was meant to serve as a basic portfolio built using only basic HTML and CSS as an exercise. This website will be the same thing, but with responsiveness to different viewport sizes, including mobile. While starting from scratch with a css framework, such as BootStrap, would probably be quicker and easier, the point of this website is to do it for myself without the help and level of abstraction that framework would provide. 

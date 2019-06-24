@@ -1,0 +1,201 @@
+body {
+    /* Fonts and housekeeping to clear out browser defaults for spacing that we don't want. */
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    color: #777777;
+    background-image: url("../images/email-pattern.png");
+}
+
+h1 {
+    /* Fonts and color */
+    font-family: 'Georgia', Times, 'Times New Roman', serif;
+    color: #4aaaa5;
+}
+
+a {
+    /* Getting rid of the underline on links and making them grey. */
+    text-decoration: none;
+    color: #777777;
+}
+
+p {
+    font-size: 16pt;
+}
+
+br {
+    /* This makes sure our br tags don't accidently get floated, since we never ever want that.  */
+    clear: both;
+}
+
+hr {
+    /* For visible line break lines. */
+    border-top: 1px solid #cccccc;
+    margin-bottom: 30px;
+}
+
+.noBreak {
+    /* Will add this to any block element that I don't want to linebreak. */
+    display: inline;
+}
+
+
+/* Begin Header Specific Styling */
+
+#topPannelOuter {
+    /* This creates the part of the header that spans the whole page and has a grey boarder on the bottom */
+    /* Encloses the topPannelInner. */
+    background-color: white;
+    border-bottom: solid 2px #cccccc;
+    margin-bottom: 30px;
+    width: 100%;
+    min-width: 960px;
+}
+
+#topPannelInner {
+     /* This will create an area of the proper size, centered to contain our header content. */
+     /* This element sits within the topPannelOuter. */
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#titleBox {
+    /* This is for the teal box with my name inside of it in white, which sits in the header on the left side. */
+    background-color: #4aaaa5;
+    color: white;
+    padding: 20px; 
+    display: inline-block;
+    margin: 0px;
+}
+
+.nav {
+    /* To get our nav elements right justified we use a float: right; */
+    /* Trying to center this element vertically, however, is not going to work well due to the float. 
+        To get around this issue, we'll just put the actual text in another div insdie this one. See below.*/
+    float: right;
+    color: grey;
+}
+
+.nav div {
+    /* The sub- div tag inside our .nav div tag is where we'll center our text vertically.
+        We can easilly do this using top and bottom padding that are the same value.*/
+    /* Q: Setting top and bottom to 'auto' breaks this. Why? */
+    padding: 30px 0px;
+}
+
+/* End header specific styling */
+
+/* Begin main section specific styling. */
+#mainSection {
+    background-color: white;
+    border: 1px solid #dddddd;
+
+    /* Margin L/R 'auto' centers the element */
+    margin: 0px auto;
+
+    /* To have our content area total only 960px we use: (960px) - (2 * padding) - (2 * border) */
+    width: 908px; 
+    padding: 25px;
+
+}
+
+.profilePic {
+    float: left;
+    margin: 0px 10px 10px 0px;
+    padding-top: 5px;
+}
+
+.footerFixer {
+    /* Makes sure that  */
+    min-height: calc(100vh - 193px);
+}
+
+/* Form Styling: */
+
+form {
+    width: auto;
+}
+
+input {
+    width: 100%;
+    margin: 7px 0px;
+}
+
+.submitButton {
+    background-color: #4aaaa5;
+    width: auto;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+/* Portfolio Boxes Styling */
+
+.displayBoxRow {
+    clear: both;
+    width: 100%;
+}
+
+.displayBox {
+    display: inline-block;
+    width: 300px;
+    height: 250px;
+    margin: 0px 30px 0px 0px;
+    background-color: rgb(204, 204, 204);
+}
+
+.displayBox img {
+    width: 100%;
+    height: 100%;
+}
+
+.displayBox h6 {
+    /* BUG: Use of absolute positioning is causing extra space below the element which the a tag is wrapping around. */
+    width: 100%;
+    margin: 0px;
+    padding: 10px 0px;
+    text-align: center;
+    font-size: 14pt;
+    font-family: 'Georgia', Times, 'Times New Roman', serif;
+    color: white;
+    background-color: #4aaaa5;
+    position: relative;
+    bottom: 50px;
+
+}
+
+/* End main section specific styling */
+
+
+/* Begin footer specific styling */
+/* Note: A large part of the positioning for the footer is handled by the footerFixer class which wraps the main content area so
+    as to always push the footer down just enough to sit perfectly at the bottom of the page. That class is styled in the 
+    main content area section of this document as it is not actually part of the footer itself.*/
+
+footer {
+    clear: both;
+    background-color: #666666;
+    border-top: 5px solid #4aaaa5;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0 0 0;
+}
+
+footer p {
+    /* This for the 'copyright' text. */
+    clear: both;
+    font-size: 9pt;
+    color: white;
+    position: relative;
+    padding: 0px;
+    margin: 0px;
+    /* To actually center the copyright text we need to take it to 50% of the page width, but then back off by half the length
+        of the text itself, since we're placing its left edge, not its center. */
+    right: calc(-50% + 31.765px);
+    bottom: -20px;
+}
