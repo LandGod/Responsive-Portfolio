@@ -207,6 +207,25 @@ footer p {
 
     }
 
+    #titleBox {
+        width: 100%;
+    }
+
+    .nav {
+        float: none;
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .nav div {
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .footerFixer {
+        min-height: calc(100vh - 130px);
+    }
+
     #mainSection p {
         font-size: 12px;
     }
