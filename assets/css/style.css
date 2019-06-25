@@ -199,3 +199,15 @@ footer p {
     right: calc(-50% + 31.765px);
     bottom: -20px;
 }
+
+@media (max-width: 600px) {
+    .profilePic {
+        width: calc(.6 * 175px);
+        height: calc(.6 * 233px);
+
+    }
+
+    #mainSection p {
+        font-size: 12px;
+    }
+}
