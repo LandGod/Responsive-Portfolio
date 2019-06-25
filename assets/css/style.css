@@ -207,19 +207,29 @@ footer p {
 
     }
 
+    #topPannelOuter {
+        margin: 0;
+        padding: 0;
+    }
+
     #titleBox {
         width: 100%;
+        margin: 0;
+        padding: 10px 0px 10px 0px;
+        text-align: center;
     }
 
     .nav {
         float: none;
         padding: 0px;
         margin: 0px;
+        width: 100%;
     }
 
     .nav div {
         padding: 0px;
-        margin: 0px;
+        margin: 0px auto;
+        text-align: center;
     }
 
     .footerFixer {
