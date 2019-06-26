@@ -239,4 +239,9 @@ footer p {
     #mainSection p {
         font-size: 12px;
     }
+
+    .displayBox {
+        display: block;
+        margin: 20px auto;
+    }
 }
