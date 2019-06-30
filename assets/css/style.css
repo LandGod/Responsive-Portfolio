@@ -200,16 +200,16 @@ footer p {
     bottom: -20px;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 640px) {
     .profilePic {
         width: calc(15vmin * 1.75);
         height: calc(15vmin * 2.33);
 
     }
 
-    #topPannelOuter {
-        margin: 0;
-        padding: 0;
+    #topPannelInner {
+        margin: 0; 
+        padding: 0 !important;
     }
 
     #titleBox {
@@ -238,6 +238,30 @@ footer p {
 
     #mainSection p {
         font-size: 12px;
+    }
+
+    .displayBox {
+        width: 50vmin;
+        height: 50vmin;
+        display: block;
+        margin: 20px auto;
+    }
+
+    .displayBox h6 {
+        font-size: 4vmin;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+
+    #topPannelInner {
+        padding: 0 20px;
+    }
+
+    .footerFixer {
+        min-height: calc(100vh - 130px);
+        padding: 0 20px;
     }
 
     .displayBox {
